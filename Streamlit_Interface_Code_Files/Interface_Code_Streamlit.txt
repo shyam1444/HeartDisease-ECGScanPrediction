@@ -1,7 +1,7 @@
 #This code combines both the operations of ECG Scan Prediction as well as Heart Disease Prediction
 #This code should be run in VSCode and that the output will come after running " streamlit run <app_name> "
 #Also the images I have displayed for the interface below for just a reference sake
-#I have added the images in the folder where this code file is present
+#I have added the images in the folder where this code file is present. You can change the path for these images once downloaded.
 
 import streamlit as st
 
