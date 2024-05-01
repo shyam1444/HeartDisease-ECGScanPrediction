@@ -1,0 +1,48 @@
+#This code combines both the operations of ECG Scan Prediction as well as Heart Disease Prediction
+#This code should be run in VSCode and that the output will come after running " streamlit run <app_name> "
+#Also the images I have displayed for the interface below for just a reference sake
+#I have added the images in the folder where this code file is present
+
+import streamlit as st
+
+primaryColor = "#4CAF50" 
+
+st.set_page_config(page_title="Heart Disease/ECG Scan Prediction", page_icon=":heart:", layout="wide")
+
+st.markdown(f"""<h1 style="font-size: 36px; color: {primaryColor}; text-align: center;">Heart Disease/ECG Scan Prediction App</h1>""", unsafe_allow_html=True)
+
+selected_link = st.selectbox("Select a Link:", ("Link 1 (Exploratory Data Analysis of the Heart Disease Prediction using X-Ray Scan)", "Link 2 (ECG Scan Prediction Website)"))
+
+if selected_link == "Link 1 (Exploratory Data Analysis of the Heart Disease Prediction using X-Ray Scan)":
+  st.write("Click to open the Heart Disease Prediction EDA:", style=f"""
+      color: {primaryColor};
+      font-size: 20px;
+  """)
+  if st.button("Open Link"):
+    st.write("Copy Paste the Link and view the document")
+    st.write("C://Users//ShyamVenkatraman//Downloads//profile_report333.html")
+elif selected_link == "Link 2 (ECG Scan Prediction Website)":
+  st.write("Click to open the web link:", style=f"""
+      color: {primaryColor};
+      font-size: 20px;
+  """)
+  if st.button("Open Web Link"):
+    st.write("[ECG Scan Prediction Website](https://cdpn.io/pen/debug/JjVzgrz?authentication_hash=nqAwvgRpPaNr)")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+      st.image("C:/Users/ShyamVenkatraman/Downloads/Image_classification/Ayurzenithapp/Efig_79.png", width=200)
+    with col2:
+      st.image("C:/Users/ShyamVenkatraman/Downloads/Image_classification/Ayurzenithapp/Qfig_18.png", width=200)
+    with col3:
+      st.image("C:/Users/ShyamVenkatraman/Downloads/Image_classification/Ayurzenithapp/fig_31200053.png", width=200)
+
+    st.write("For ECG Scan Images, give the inputs in the above format.", style=f"""
+      color: black;
+      font-size: 20px;
+    """)
+
+if selected_link == "Select a Link:":
+  st.warning("Please select a link.", style=f"""
+      color: red;
+      font-size: 20px;
+  """)
