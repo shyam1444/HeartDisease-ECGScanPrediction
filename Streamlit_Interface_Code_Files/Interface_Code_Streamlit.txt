@@ -20,14 +20,14 @@ if selected_link == "Link 1 (Exploratory Data Analysis of the Heart Disease Pred
   """)
   if st.button("Open Link"):
     st.write("Copy Paste the Link and view the document")
-    st.write("C://Users//ShyamVenkatraman//Downloads//profile_report333.html")
-elif selected_link == "Link 2 (ECG Scan Prediction Website)":
+    st.write("C://Users//ShyamVenkatraman//Downloads//profile_report333.html")  #After downloading the file, you can change the path of this code and view report.
+ elif selected_link == "Link 2 (ECG Scan Prediction Website)":
   st.write("Click to open the web link:", style=f"""
       color: {primaryColor};
       font-size: 20px;
   """)
   if st.button("Open Web Link"):
-    st.write("[ECG Scan Prediction Website](https://cdpn.io/pen/debug/JjVzgrz?authentication_hash=nqAwvgRpPaNr)")
+    st.write("[ECG Scan Prediction Website](https://cdpn.io/pen/debug/JjVzgrz?authentication_hash=nqAwvgRpPaNr)")    #Link to the web interface to the ECG Scan Prediction
     col1, col2, col3 = st.columns(3)
     with col1:
       st.image("C:/Users/ShyamVenkatraman/Downloads/Image_classification/Ayurzenithapp/Efig_79.png", width=200)
